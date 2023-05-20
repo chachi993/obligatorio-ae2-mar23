@@ -4,12 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e8f7fda-57c8-4042-8121-25ea67091814" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/Conexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dominio/EstacionDeTren.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dominio/Pasajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominio/Pasajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaz/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaz/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/ImplementacionSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sistema/ImplementacionSistema.java" afterDir="false" />
+    <list default="true" id="4e8f7fda-57c8-4042-8121-25ea67091814" name="Changes" comment="Del 8 al 10 completado">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/._obligatorio-ae2-mar23-tests-v2" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/._obligatorio-ae2-mar23-tests-v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/._lib" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/._lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/._src" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/._src" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/._main" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/._main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/._test" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/._test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/main/._java" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/main/._java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/main/java/._dominio" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/main/java/._dominio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/main/java/._interfaz" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/main/java/._interfaz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/main/java/._sistema" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/main/java/._sistema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/test/._java" beforeDir="false" afterPath="$PROJECT_DIR$/__MACOSX/obligatorio-ae2-mar23-tests-v2/src/test/._java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/obligatorio-ae2-mar23-tests-v2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/lib/apiguardian-api-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/lib/junit-jupiter-5.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/lib/junit-jupiter-api-5.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/lib/junit-jupiter-engine-5.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/lib/junit-jupiter-params-5.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/lib/junit-platform-commons-1.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/lib/junit-platform-engine-1.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/lib/opentest4j-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/java/dominio/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/java/interfaz/Consulta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/java/interfaz/EstadoCamino.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/java/interfaz/Nacionalidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/java/interfaz/Retorno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/java/interfaz/Sistema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/java/interfaz/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/java/sistema/ImplementacionSistema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/java/sistema/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/main/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/AuxAccionesEstaciones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/AuxAccionesPasajeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/AuxAsserciones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/AuxTestClaseEstacionNoUsar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/AuxTestConexionNoUsar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/AuxTestPasajeroNoUsar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/TestCaminosMinimosDistancia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/TestCaminosMinimosEuros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/TestEstacionesConexiones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/TestFiltroPasajeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/TestPasajeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/TestSistemaAFuturo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/TestTrasbordos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/java/sistema/TestUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23-tests-v2/src/test/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-ae2-mar23.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +90,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/flore/Desktop/ORT/obligatorio-ae2-mar23"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +106,14 @@
       <option name="presentableId" value="Default" />
       <updated>1684281382493</updated>
     </task>
+    <task id="LOCAL-00001" summary="Del 8 al 10 completado">
+      <created>1684600878303</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684600878303</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -62,10 +121,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Del 8 al 10 completado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Del 8 al 10 completado" />
   </component>
 </project>
