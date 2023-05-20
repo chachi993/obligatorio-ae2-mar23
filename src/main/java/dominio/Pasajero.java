@@ -5,8 +5,6 @@ public class Pasajero {
     private String nombre;
     private int edad;
 
-
-
     public Pasajero(String indentificadorPasajero, String nombre, int edad) {
         this.indentificadorPasajero = indentificadorPasajero;
         this.nombre = nombre;
