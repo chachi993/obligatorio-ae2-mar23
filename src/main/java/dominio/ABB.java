@@ -1,8 +1,11 @@
 package dominio;
 
 public class ABB {
-
     private NodoABB raiz;
+
+    public NodoABB getRaiz() {
+        return raiz;
+    }
 
     public  boolean existePasajero(String identificador){
        Pasajero pasajero = pertence(identificador);
@@ -13,7 +16,6 @@ public class ABB {
            return false;
        }
     }
-
     public  void insertar(Pasajero dato) {
         if (raiz == null) {
             raiz = new NodoABB(dato);
@@ -37,7 +39,6 @@ public class ABB {
             }
         }
     }
-
     public  Pasajero pertence(String dato) {
         return pertenceRec(raiz, dato);
     }
@@ -55,7 +56,6 @@ public class ABB {
             return null;
         }
     }
-
     public String listarAscendente() {
         return listarAscendente(raiz);
     }

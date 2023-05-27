@@ -38,6 +38,8 @@ public class Consulta {
             this.esNumerico = esNumerico;
         }
     }
+
+
     public static class NodoConsulta {
         private final TipoNodoConsulta tipoNodoConsulta;
         private final int valorInt;//se usa para la consulta de edad
@@ -48,11 +50,11 @@ public class Consulta {
         private final NodoConsulta der;
 
         public NodoConsulta(final TipoNodoConsulta tipoNodoConsulta,
-                            final int valorInt,
-                            final String valorString,
-                            final Nacionalidad valorNacionalidad,
-                            final NodoConsulta izq,
-                            final NodoConsulta der) {
+                final int valorInt,
+                final String valorString,
+                final Nacionalidad valorNacionalidad,
+                final NodoConsulta izq,
+                final NodoConsulta der) {
             this.tipoNodoConsulta = tipoNodoConsulta;
             this.valorInt = valorInt;
             this.valorString = valorString;
@@ -62,8 +64,8 @@ public class Consulta {
         }
 
         public NodoConsulta(final TipoNodoConsulta tipoNodoConsulta,
-                            final NodoConsulta izq,
-                            final NodoConsulta der) {
+                final NodoConsulta izq,
+                final NodoConsulta der) {
             this.tipoNodoConsulta = tipoNodoConsulta;
             this.izq = izq;
             this.der = der;
@@ -84,6 +86,10 @@ public class Consulta {
             return valorString;
         }
 
+        public Nacionalidad getValorNacionalidad() {
+            return valorNacionalidad;
+        }
+
         public NodoConsulta getIzq() {
             return izq;
         }
@@ -102,12 +108,12 @@ public class Consulta {
     }
 
     public static Consulta and(Consulta c1,
-                               Consulta c2) {
+            Consulta c2) {
         return new Consulta(new NodoConsulta(TipoNodoConsulta.And, 0, "", null, c1.raiz, c2.raiz));
     }
 
     public static Consulta or(Consulta c1,
-                              Consulta c2) {
+            Consulta c2) {
         return new Consulta(new NodoConsulta(TipoNodoConsulta.Or, 0, "", null, c1.raiz, c2.raiz));
     }
 
@@ -123,6 +129,54 @@ public class Consulta {
     public static Consulta nombreIgual(String nombre) {
         return new Consulta(new NodoConsulta(TipoNodoConsulta.NombreIgual, 0, Objects.requireNonNull(nombre),
                 null, null, null));
+    }
+
+    public String toUrl() {
+        StringBuilder sb = new StringBuilder("digraph G{\n");
+        toUrl(raiz, null, sb, "R");
+        sb.append("}");
+        return String.format("https://dreampuf.github.io/GraphvizOnline/#%s",
+                sb.toString().replace("\n", "%0A")
+                        .replace(" ", "%20")
+                        .replace("#", "%232")
+                        .replace("\"", "%22")
+                        .replace("{", "%7B")
+                        .replace("}", "%7D")
+                        .replace("[", "%5B")
+                        .replace("]", "%5D")
+                        .replace("=", "%3D")
+                        .replace("-", "%2D")
+                        .replace("_", "%5F")
+                        .replace(">", "%3E")
+                        .replace(";", "%3B"));
+    }
+
+    private void toUrl(NodoConsulta nodo, String nombrePadre, StringBuilder sb, String prefix) {
+        if (nodo != null) {
+            switch (nodo.tipoNodoConsulta) {
+                case Or:
+                case And:
+                    sb.append(String.format("%s [label=\"%s\"];\n", prefix, nodo.tipoNodoConsulta));
+                    break;
+                case EdadMayor:
+                    sb.append(String.format("%s [label=\"%s [%s]\"];\n", prefix, nodo.tipoNodoConsulta, nodo.valorInt));
+                    break;
+                case NombreIgual:
+                    sb.append(String.format("%s [label=\"%s [%s]\"];\n", prefix, nodo.tipoNodoConsulta, nodo.valorString));
+                    break;
+                case Nacionalidad:
+                    sb.append(String.format("%s [label=\"%s [%s]\"];\n", prefix, nodo.tipoNodoConsulta, nodo.valorNacionalidad));
+                    break;
+                default:
+                    sb.append(String.format("%s [label=\"%s\"];\n", prefix, nodo.tipoNodoConsulta));
+                    break;
+            }
+            if (nombrePadre != null) {
+                sb.append(String.format("%s -> %s;\n", nombrePadre, prefix));
+            }
+            toUrl(nodo.izq, prefix, sb, prefix + "_L");
+            toUrl(nodo.der, prefix, sb, prefix + "_R");
+        }
     }
 
     @Override
@@ -157,13 +211,11 @@ public class Consulta {
     public static void main(String[] args) {
         //Vamos subiendo la complejidad
         System.out.println(Consulta.fromString("edad > 10 OR nacionalidad = 'OT'"));
-
         System.out.println(Consulta.fromString("[edad >10] AND [nacionalidad ='DE' AND nacionalidad='ES']"));
         System.out.println(Consulta.fromString("[[[[[edad>10]]]] AND [nombre='pepe']]"));
         System.out.println(Consulta.fromString("'pepe'=nombre"));
         System.out.println(Consulta.fromString("[[edad>12 AND nacionalidad='ES' AND nombre='Roberto'] OR " +
                 "[edad>   14 AND     ['Raul'    =     nombre OR nombre= 'clotilda']]]"));
-
         //Estas son claramente invalidas
         System.out.println(Consulta.fromString("[[edad>10] AND nombre='pepe'"));
         System.out.println(Consulta.fromString("invalida][]"));
@@ -284,7 +336,6 @@ public class Consulta {
 
     //  VA a dar algo valido mientras haya un <espacios>numero[cualquierCosa]
     private static ResultadoParse<Integer> parsearInt(String consulta) {
-
         if (consulta.startsWith(" ")) {
             return parsearInt(consulta.substring(1));
         } else if (Character.isDigit(consulta.charAt(0))) {
@@ -360,7 +411,7 @@ public class Consulta {
     }
 
     private static int buscarSimbolo(final TipoNodoConsulta tipoEsperado,
-                                     final String consulta) {
+            final String consulta) {
         int idxInicio = 0;
         while (idxInicio < consulta.length() && consulta.charAt(idxInicio) != tipoEsperado.simboloEsperado) {
             if (consulta.charAt(idxInicio) == ' ') {

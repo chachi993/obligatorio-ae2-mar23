@@ -24,14 +24,14 @@ public interface Sistema {
      *
      * @param consulta La consulta a aplicar
      */
-   // Retorno filtrarPasajeros(Consulta consulta);
+    Retorno filtrarPasajeros(Consulta consulta);
 
     /**
      * Busca un pasajero en el sistema por cedula
      *
      * @param identificador El identificador del pasajero.
      */
-   // Retorno buscarPasajero(String identificador);
+    Retorno buscarPasajero(String identificador);
 
     /**
      * @return Los pasajeros listados por identificador ascendente
@@ -88,20 +88,20 @@ public interface Sistema {
      * @param cantidad La cantidad de saltos maxima
      * @return Las estaciones a las que puede llegar con hasta cantidad de trasbordos.
      */
-   // Retorno listadoEstacionesCantTrasbordos(String codigo, int cantidad);
+    Retorno listadoEstacionesCantTrasbordos(String codigo, int cantidad);
 
     /**
      * @param codigoEstacionOrigen  El codigo de la estacion de origen.
      * @param codigoEstacionDestino El codigo de la estacion de destino.
      * @return El camino si lo hay entre el origen y el destino con los menores kilometros posibles
      */
-    //Retorno viajeCostoMinimoKilometros(String codigoEstacionOrigen, String codigoEstacionDestino);
+    Retorno viajeCostoMinimoKilometros(String codigoEstacionOrigen, String codigoEstacionDestino);
 
     /**
      * @param codigoEstacionOrigen  El codigo de la estacion de origen.
      * @param codigoEstacionDestino El codigo de la estacion de destino.
      * @return El camino si lo hay entre el origen y el destino con el menor costo en euros posible
      */
-   // Retorno viajeCostoMinimoEuros(String codigoEstacionOrigen, String codigoEstacionDestino);
+   Retorno viajeCostoMinimoEuros(String codigoEstacionOrigen, String codigoEstacionDestino);
 
 }
